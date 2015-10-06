@@ -26,6 +26,13 @@ app.on('ready', function() {
   // and load the index.html of the app.
   mainWindow.loadUrl('file://' + __dirname + '/app/index.html');
 
+  var service = require('child_process').spawn('node',['service/index.js'],{
+    cwd: require('path').join("..",__dirname)
+  });
+  service.stdout.on('data', function (data) {
+    console.log('stdout: ' + data);
+  });
+
   // Open the DevTools.
   mainWindow.openDevTools();
 

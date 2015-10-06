@@ -9,10 +9,12 @@
   "dependencies": {
     "angular": "*",
     "browserify": "*",
+    "del": "^2.0.2",
     "gulp": "*",
     "gulp-browserify": "*",
     "gulp-debug": "^2.1.1",
     "gulp-electron": "*",
+    "gulp-install": "^0.6.0",
     "gulp-sass": "*",
     "gulp-sequence": "^0.4.1",
     "gulp-sourcemaps": "*",
@@ -23,7 +25,7 @@
     "vinyl-source-stream": "*"
   },
   "config": {
-    "dist":"./build",
-    "src":"./src"
+    "dist": "./build",
+    "src": "./src"
   }
 }

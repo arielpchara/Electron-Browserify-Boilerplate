@@ -2,7 +2,7 @@ var gulp = require( 'gulp' );
 var gulpSequence = require('gulp-sequence');
 var config = require( '../package.json' ).config;
 
-gulp.task( 'build', gulpSequence('clean','copy','browserify','sass') );
+gulp.task( 'build', gulpSequence('clean','copy','browserify','sass','install') );
 
 gulp.task( 'build:watch', ['build'] , function (){
   gulp.watch( ['**/*'],  {cwd:config.src}, ['build']);
