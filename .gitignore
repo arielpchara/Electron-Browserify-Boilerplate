@@ -1,6 +1,4 @@
 node_modules
 build
 cache
-dest
-widgets.pro-win32-x64
-**/*.asar
+release

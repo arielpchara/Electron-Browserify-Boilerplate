@@ -1,27 +1,25 @@
 {
   "name": "electron-angular-boilerplate",
-  "description":"Electron Boilerplate using Gulp+Angular+Browsorify+Nunjucks+Sass",
+  "description": "Electron Boilerplate using Gulp+Angular+Browsorify+Nunjucks+Sass",
   "private": true,
   "version": "0.1.1",
   "scripts": {
-    "pack": "gilp pack && electron-packager ./app widgets.pro --platform=win32 --arch=x64 --version=0.33.3",
-    "build": "gilp build && electron-builder ./app --platform=win32 --out=./build/ --config=app/config.json"
+    "start": "gulp build:watch && electron ./build"
   },
   "dependencies": {
-    "angular": "^1.4.5",
-    "browserify": "^11.2.0",
-    "gulp": "^3.9.0",
-    "gulp-atom": "^0.1.0",
-    "gulp-browserify": "^0.5.1",
-    "gulp-data": "^1.2.0",
+    "angular": "*",
+    "browserify": "*",
+    "gulp": "*",
+    "gulp-browserify": "*",
     "gulp-debug": "^2.1.1",
-    "gulp-install": "^0.6.0",
-    "gulp-sass": "^2.0.4",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.4.1",
-    "gulp-util": "^3.0.6",
-    "require-dir": "^0.3.0",
-    "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "gulp-electron": "*",
+    "gulp-sass": "*",
+    "gulp-sequence": "^0.4.1",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "*",
+    "merge-stream": "^1.0.0",
+    "require-dir": "*",
+    "rimraf": "^2.4.3",
+    "vinyl-source-stream": "*"
   }
 }
