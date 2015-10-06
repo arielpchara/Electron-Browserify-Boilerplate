@@ -2,7 +2,7 @@
   "name": "electron-angular-boilerplate",
   "description": "Electron Boilerplate using Gulp+Angular+Browsorify+Nunjucks+Sass",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.2.0",
   "scripts": {
     "start": "gulp build:watch && electron ./build"
   },
