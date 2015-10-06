@@ -21,5 +21,9 @@
     "require-dir": "*",
     "rimraf": "^2.4.3",
     "vinyl-source-stream": "*"
+  },
+  "config": {
+    "dist":"./build",
+    "src":"./src"
   }
 }

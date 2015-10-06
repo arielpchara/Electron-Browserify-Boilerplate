@@ -5,7 +5,7 @@ var packageJson = require('../package.json');
 gulp.task('electron', function() {
   gulp.src("")
     .pipe(electron({
-      src: './build',
+      src: packageJson.config.dist,
       packageJson: packageJson,
       release: './release',
       cache: './cache',

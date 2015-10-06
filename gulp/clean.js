@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var rimraf = require('rimraf');
+var config = require( '../package.json' ).config;
 
 gulp.task('clean', function (cb) {
-   rimraf('./build', cb);
+   rimraf(config.dist, cb);
 });
